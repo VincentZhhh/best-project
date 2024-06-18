@@ -10,8 +10,8 @@
     <groupId>com.zhangweisen</groupId>
     <artifactId>best-project</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>best-backend</name>
-    <description>best-backend</description>
+    <name>best-project</name>
+    <description>best-project</description>
     <packaging>pom</packaging>
 
     <properties>
