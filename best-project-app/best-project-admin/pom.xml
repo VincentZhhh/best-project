@@ -5,12 +5,11 @@
     <parent>
         <groupId>com.zhangweisen</groupId>
         <artifactId>best-project-app</artifactId>
-        <version>0.0.1</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>${revision}</version>
     </parent>
     <groupId>com.zhangweisen</groupId>
     <artifactId>best-project-admin</artifactId>
-    <version>0.0.1</version>
+    <version>${revision}</version>
     <name>best-project-admin</name>
     <description>best-project-admin</description>
 

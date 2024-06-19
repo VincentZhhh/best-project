@@ -5,18 +5,16 @@
     <parent>
         <groupId>com.zhangweisen</groupId>
         <artifactId>best-project</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>${revision}</version>
     </parent>
     <groupId>com.zhangweisen</groupId>
     <artifactId>best-project-app</artifactId>
-    <version>${app.version}</version>
+    <version>${revision}</version>
     <name>best-project-app</name>
     <description>app</description>
     <packaging>pom</packaging>
 
     <properties>
-        <app.version>0.0.1</app.version>
     </properties>
 
     <modules>
