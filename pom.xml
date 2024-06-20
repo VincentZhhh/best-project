@@ -13,20 +13,18 @@
         <revision>0.0.1</revision>
         <java.version>17</java.version>
         <spring.boot.version>3.0.2</spring.boot.version>
+        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
         <spring-cloud-alibaba.version>2023.0.1.0</spring-cloud-alibaba.version>
         <spring-cloud.version>2022.0.0</spring-cloud.version>
         <flatten-maven-plugin.version>1.5.0</flatten-maven-plugin.version>
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-ai</artifactId>
-        </dependency>
     </dependencies>
 
     <modules>
         <module>best-project-app</module>
+        <module>best-project-integration</module>
     </modules>
 
     <dependencyManagement>
@@ -67,6 +65,15 @@
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
                 </configuration>
             </plugin>
             <!-- 统一 revision 版本 -->

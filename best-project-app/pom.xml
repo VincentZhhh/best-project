@@ -49,6 +49,12 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.zhangweisen</groupId>
+            <artifactId>best-project-integration</artifactId>
+            <version>${revision}</version>
+        </dependency>
     </dependencies>
 
 </project>
