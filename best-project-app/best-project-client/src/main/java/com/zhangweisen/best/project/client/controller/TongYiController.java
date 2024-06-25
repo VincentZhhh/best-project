@@ -22,8 +22,11 @@ public class TongYiController {
         return tongYiService.completion(message);
     }
 
-    @GetMapping("test")
-    public String test() {
-        return "success";
+    @GetMapping("/image")
+    public String image(
+            @RequestParam(value = "message", defaultValue = "we bare bear")
+            String message
+    ) {
+        return tongYiService.genImg(message).getResult().getOutput().getUrl();
     }
 }
