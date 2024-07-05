@@ -24,7 +24,7 @@ public class TongYiController {
 
     @GetMapping("/image")
     public String image(
-            @RequestParam(value = "message", defaultValue = "we bare bear")
+            @RequestParam(value = "message", defaultValue = "《we bare bear》")
             String message
     ) {
         return tongYiService.genImg(message).getResult().getOutput().getUrl();
