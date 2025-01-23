@@ -7,7 +7,6 @@
         <artifactId>best-project</artifactId>
         <version>${revision}</version>
     </parent>
-    <groupId>com.zhangweisen</groupId>
     <artifactId>best-project-app</artifactId>
     <version>${revision}</version>
     <name>best-project-app</name>
@@ -24,35 +23,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
             <groupId>com.zhangweisen</groupId>
-            <artifactId>best-project-integration</artifactId>
+            <artifactId>best-project-spring-boot-starter-base</artifactId>
             <version>${revision}</version>
         </dependency>
     </dependencies>

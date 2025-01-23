@@ -1,10 +1,10 @@
-package com.zhangweisen.best.project.integration;
+package com.zhangweisen.bestprojectspringbootstarterbase;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BestProjectIntegrationApplicationTests {
+class BestProjectSpringBootStarterBaseApplicationTests {
 
     @Test
     void contextLoads() {

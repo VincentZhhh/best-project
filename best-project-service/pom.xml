@@ -6,11 +6,7 @@
         <artifactId>best-project</artifactId>
         <version>${revision}</version>
     </parent>
-    <artifactId>best-project-integration</artifactId>
-    <name>best-project-integration</name>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>best-project-spring-boot-starter-base</module>
-    </modules>
+    <artifactId>best-project-service</artifactId>
+    <name>best-project-service</name>
+    <url>http://maven.apache.org</url>
 </project>
