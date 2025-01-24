@@ -24,6 +24,8 @@
         <module>best-project-integration</module>
         <module>best-project-dependencies</module>
         <module>best-project-service</module>
+        <module>best-project-domain</module>
+        <module>best-project-common</module>
     </modules>
 
     <dependencyManagement>
