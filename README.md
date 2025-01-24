@@ -1,6 +1,6 @@
 # BEST-PROJECT
 
-### 2.项目目录介绍
+### 0.项目架构
 ```
   best-project-app -> 应用层
   best-project-domain -> 领域层
