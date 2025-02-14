@@ -6,7 +6,31 @@
         <artifactId>best-project</artifactId>
         <version>${revision}</version>
     </parent>
+    <packaging>pom</packaging>
     <artifactId>best-project-domain</artifactId>
     <name>best-project-domain</name>
     <url>http://maven.apache.org</url>
+
+    <modules>
+        <module>best-project-order</module>
+        <module>best-project-product</module>
+        <module>best-project-user</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.zhangweisen</groupId>
+            <artifactId>best-project-spring-boot-starter-base</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.zhangweisen</groupId>
+            <artifactId>best-project-spring-boot-starter-mybatis</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+
+
+    </dependencies>
 </project>

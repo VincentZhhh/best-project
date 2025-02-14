@@ -3,15 +3,9 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.zhangweisen</groupId>
-        <artifactId>best-project</artifactId>
+        <artifactId>best-project-domain</artifactId>
         <version>${revision}</version>
     </parent>
-    <artifactId>best-project-integration</artifactId>
-    <name>best-project-integration</name>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>best-project-spring-boot-starter-base</module>
-        <module>best-project-spring-boot-starter-mybatis</module>
-    </modules>
+    <artifactId>best-project-product</artifactId>
+    <url>http://maven.apache.org</url>
 </project>
