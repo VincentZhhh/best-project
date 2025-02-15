@@ -1,4 +1,4 @@
-package com.zhangweisen.best.project.base.holder;
+package com.zhangweisen.best.project.mybatis.holder;
 
 import lombok.extern.slf4j.Slf4j;
 

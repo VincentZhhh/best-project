@@ -1,9 +1,11 @@
 package com.zhangweisen.best.project.product.controller;
 
-import org.springframework.web.bind.annotation.*;
-
-import java.util.Arrays;
-import java.util.concurrent.TimeUnit;
+import com.zhangweisen.best.project.mybatis.holder.TenantContextHolder;
+import com.zhangweisen.best.project.product.service.IProductService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <p>
@@ -17,4 +19,12 @@ import java.util.concurrent.TimeUnit;
 @RequestMapping("/product")
 public class ProductController {
 
+    @Autowired
+    private IProductService productService;
+
+    @PostMapping("/list")
+    public Object list() {
+        TenantContextHolder.setTenantId("1");
+        return productService.list();
+    }
 }

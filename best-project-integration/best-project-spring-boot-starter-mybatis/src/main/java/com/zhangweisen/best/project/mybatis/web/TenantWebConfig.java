@@ -1,12 +1,14 @@
-package com.zhangweisen.best.project.base.web;
+package com.zhangweisen.best.project.mybatis.web;
 
-import com.zhangweisen.best.project.base.interceptor.TenantInterceptor;
+import com.zhangweisen.best.project.mybatis.interceptor.TenantInterceptor;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-public class WebConfig implements WebMvcConfigurer {
+@ConditionalOnProperty(name = "mybatis-tenant.enable", havingValue = "true")
+public class TenantWebConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {

@@ -1,14 +1,12 @@
 package com.zhangweisen.best.project.mybatis.handler;
 
 import com.baomidou.mybatisplus.extension.plugins.handler.TenantLineHandler;
-import com.zhangweisen.best.project.base.holder.TenantContextHolder;
+import com.zhangweisen.best.project.mybatis.holder.TenantContextHolder;
 import net.sf.jsqlparser.expression.StringValue;
-import org.springframework.stereotype.Component;
 import net.sf.jsqlparser.expression.Expression;
 
 import java.util.Objects;
 
-@Component
 public class CustomTenantHandler implements TenantLineHandler {
 
     @Override

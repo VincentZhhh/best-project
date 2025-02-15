@@ -14,6 +14,7 @@
         <java.version>17</java.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
         <flatten-maven-plugin.version>1.5.0</flatten-maven-plugin.version>
+        <spring-boot-maven-plugin.version>3.0.2</spring-boot-maven-plugin.version>
     </properties>
 
     <dependencies>
@@ -45,6 +46,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot-maven-plugin.version}</version>
                 <configuration>
                     <excludes>
                         <exclude>

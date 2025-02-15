@@ -1,6 +1,6 @@
-package com.zhangweisen.best.project.base.interceptor;
+package com.zhangweisen.best.project.mybatis.interceptor;
 
-import com.zhangweisen.best.project.base.holder.TenantContextHolder;
+import com.zhangweisen.best.project.mybatis.holder.TenantContextHolder;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.web.servlet.HandlerInterceptor;

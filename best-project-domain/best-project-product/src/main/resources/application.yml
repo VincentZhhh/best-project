@@ -23,8 +23,8 @@ mybatis-plus:
       logic-not-delete-value: "NULL"  # 逻辑未删除时字段值
 
 #多租户配置，默认不开启
-#mybatis-tenant:
-#  enable: true
+mybatis-tenant:
+  enable: true
 
 logging:
   level:
