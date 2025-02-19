@@ -13,5 +13,6 @@
     <modules>
         <module>best-project-spring-boot-starter-base</module>
         <module>best-project-spring-boot-starter-mybatis</module>
+        <module>best-project-spring-boot-starter-redis</module>
     </modules>
 </project>

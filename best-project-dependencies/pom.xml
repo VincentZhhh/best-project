@@ -17,6 +17,7 @@
         <lombok.version>1.18.30</lombok.version>
         <knife4j.version>4.4.0</knife4j.version>
         <mybatis-plus.version>3.5.9</mybatis-plus.version>
+        <redisson.version>3.44.0</redisson.version>
     </properties>
 
     <dependencyManagement>
@@ -68,20 +69,14 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-boot-starter</artifactId>
+                <version>${redisson.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>${maven-compiler-plugin.version}</version>
-                <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+
 </project>
