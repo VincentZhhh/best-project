@@ -1,0 +1,52 @@
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml" />
+
+    <property name="LOG_HOME" value="/Users/apple/Desktop"/>
+    <property name="APP_NAME" value="best-project-client"/>
+
+    <!-- 控制台输出 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %clr(%d{yyyy-MM-dd HH:mm:ss}){faint} %clr(%-5level){bold} -- %clr([%thread]){magenta} %clr(%logger{36}){cyan} : %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!-- 文件输出 -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>${LOG_HOME}/best-project-product.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- 每天滚动日志，并且保存最近 30 天的日志 -->
+            <fileNamePattern>${LOG_HOME}/${APP_NAME}-%d{yyyy-MM-dd}_%i.log</fileNamePattern>
+            <maxFileSize>10MB</maxFileSize>
+            <maxHistory>30</maxHistory>  <!-- 保留 30 天的日志 -->
+            <totalSizeCap>1GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>
+                %d{yyyy-MM-dd HH:mm:ss} %-5level -- [%thread] %logger{36} : %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!-- 根日志配置 -->
+    <springProfile name="default,local">
+        <root level="INFO">
+            <appender-ref ref="STDOUT"/>
+        </root>
+    </springProfile>
+    <springProfile name="dev,uat,test,develop">
+        <root level="INFO">
+            <appender-ref ref="FILE"/>
+        </root>
+    </springProfile>
+    <springProfile name="prod,production,pre,pro">
+        <root level="INFO">
+            <appender-ref ref="FILE"/>
+        </root>
+    </springProfile>
+
+    <!-- 指定某个包的日志级别 -->
+    <logger name="com.zhangweisen.best.project" level="DEBUG"/>
+</configuration>

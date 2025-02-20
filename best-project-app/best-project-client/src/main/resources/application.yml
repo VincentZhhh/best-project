@@ -1,7 +1,2 @@
 server:
   port: 7070
-spring:
-  cloud:
-    ai:
-      tongyi:
-        api-key: sk-a83b732a5080457f968b408a178306a6
