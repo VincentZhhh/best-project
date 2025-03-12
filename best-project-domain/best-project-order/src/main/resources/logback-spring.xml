@@ -1,4 +1,7 @@
 <configuration>
+    <!-- 设置 Logback 的内部日志级别为 OFF -->
+    <statusListener class="ch.qos.logback.core.status.NopStatusListener" />
+
     <include resource="org/springframework/boot/logging/logback/defaults.xml" />
 
     <property name="LOG_HOME" value="/Users/apple/Desktop"/>

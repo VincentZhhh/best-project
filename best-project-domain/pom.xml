@@ -20,7 +20,7 @@
     <dependencies>
         <dependency>
             <groupId>com.zhangweisen</groupId>
-            <artifactId>best-project-spring-boot-starter-base</artifactId>
+            <artifactId>best-project-common</artifactId>
             <version>${revision}</version>
         </dependency>
 
